@@ -89,7 +89,6 @@ codeunit 50202 "Sales Custom WorkFlow Mgt"
 
         end;
     end;
-
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Approvals Mgmt.", OnPopulateApprovalEntryArgument, '', false, false)]
     local procedure OnPopulateApprovalEntryArgument(RecRef: RecordRef; var ApprovalEntryArgument: Record "Approval Entry"; WorkFlowStepInstance: Record "Workflow Step Instance")
     var
